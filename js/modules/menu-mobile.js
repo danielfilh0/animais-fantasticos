@@ -5,17 +5,18 @@ export default class MenuMobile {
     this.menuButton = document.querySelector(menuButton);
     this.menuList = document.querySelector(menuList);
     this.activeClass = 'active';
-    if (events === undefined) this.events = ['click', 'touchstart'];
-    else this.events = events;
+    if (events === undefined) this.events = ['touchstart', 'click'];
+      else this.events = events;
     this.openMenu = this.openMenu.bind(this);
   }
 
-  openMenu() {
-    this.menuList.classList.add('active');
-    this.menuButton.classList.add('active');
+  openMenu(event) {
+    event.preventDefault();
+    this.menuList.classList.add(this.activeClass);
+    this.menuButton.classList.add(this.activeClass);
     outsideClick(this.menuList, this.events, () => {
-      this.menuList.classList.remove('active');
-      this.menuButton.classList.remove('active');
+      this.menuList.classList.remove(this.activeClass);
+      this.menuButton.classList.remove(this.activeClass);
     });
   }
 

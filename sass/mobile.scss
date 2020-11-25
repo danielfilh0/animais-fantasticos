@@ -26,4 +26,10 @@
   .copy {
     margin-bottom: 0;
   }
+  [data-dropdown] {
+    .dropdown-menu {
+      display: block;
+      animation: show-up .3s forwards;
+    }
+  }
 }

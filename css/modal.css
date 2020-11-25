@@ -14,7 +14,8 @@
 
 .modal {
   background: white;
-  min-width: 300px;
+  width: 80vw;
+  max-width: 600px;
   padding: 40px;
   border: 10px solid #FB5;
   box-shadow: 0 0 0 10px white;
@@ -26,7 +27,9 @@
     margin: 1rem 0 .5rem 0; }
   .modal input {
     width: 100%;
-    padding: .7rem .5rem; }
+    padding: .7rem .5rem;
+    border: 2px solid #222;
+    border-radius: 0px; }
   .modal button[type="submit"] {
     display: block;
     background: #E54;

@@ -22,6 +22,10 @@
     margin-top: 0; }
 
   .copy {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+
+  [data-dropdown] .dropdown-menu {
+    display: block;
+    animation: show-up .3s forwards; } }
 
 /*# sourceMappingURL=mobile.css.map */
