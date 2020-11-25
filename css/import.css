@@ -59,6 +59,8 @@ body {
   margin-bottom: 4rem; }
   .grid-section li {
     cursor: pointer; }
+  .grid-section h1 {
+    font-size: 2.5rem; }
 
 .titulo {
   font-family: 'Playfair Display SC', georgia;
@@ -233,7 +235,8 @@ body {
 
 .modal {
   background: white;
-  min-width: 300px;
+  width: 80vw;
+  max-width: 600px;
   padding: 40px;
   border: 10px solid #FB5;
   box-shadow: 0 0 0 10px white;
@@ -245,7 +248,9 @@ body {
     margin: 1rem 0 .5rem 0; }
   .modal input {
     width: 100%;
-    padding: .7rem .5rem; }
+    padding: .7rem .5rem;
+    border: 2px solid #222;
+    border-radius: 0px; }
   .modal button[type="submit"] {
     display: block;
     background: #E54;
@@ -395,7 +400,9 @@ body {
 
 @media (max-width: 700px) {
   .numeros-grid {
-    grid-column: 1; } }
+    grid-column: 1; }
+    .numeros-grid h3 {
+      font-size: 1.5rem; } }
 @media screen and (max-width: 700px) {
   .grid-container {
     grid-template-columns: 1fr; }
@@ -420,7 +427,11 @@ body {
     margin-top: 0; }
 
   .copy {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+
+  [data-dropdown] .dropdown-menu {
+    display: block;
+    animation: show-up .3s forwards; } }
 .galeria {
   grid-column: 1 / -1; }
 
